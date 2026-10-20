@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MarkLeaf 개인정보처리방침</title>
+    <title>MarkLeaf 개인정보처리방침 · Privacy Policy</title>
     <style>
       :root {
         --bg: #fdfdfb;
         --fg: #1c2024;
         --muted: #5b636b;
-        --accent: #1f8657;
+        --accent: #1e8053;
         --border: #e3e6e9;
       }
       @media (prefers-color-scheme: dark) {
@@ -33,6 +33,20 @@
         max-width: 720px;
         margin: 0 auto;
         padding: 48px 16px 80px;
+      }
+      nav {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 24px;
+        font-size: 14px;
+      }
+      a {
+        color: var(--accent);
+      }
+      section + section {
+        margin-top: 64px;
+        padding-top: 8px;
+        border-top: 2px solid var(--border);
       }
       h1 {
         margin: 0 0 4px;
@@ -67,34 +81,89 @@
   </head>
   <body>
     <main>
-      <h1>MarkLeaf 개인정보처리방침</h1>
-      <p class="meta">시행일 2026년 10월 15일 · 대상: 크롬 확장 프로그램 MarkLeaf</p>
+      <nav aria-label="언어 / Language"><a href="#ko" hreflang="ko">한국어</a><a href="#en" hreflang="en">English</a></nav>
 
-      <p>MarkLeaf 는 <strong>사용자의 문서 내용과 개인정보를 어디에도 전송하지 않습니다.</strong> 개발자는 서버를 운영하지 않으며, 분석·광고·추적 코드를 넣지 않습니다.</p>
+      <section id="ko" lang="ko">
+        <h1>MarkLeaf 개인정보처리방침</h1>
+        <p class="meta">시행일 2026년 10월 20일 (처음 2026년 10월 15일) · 대상: 크롬 확장 프로그램 MarkLeaf</p>
 
-      <h2>1. 수집하는 정보</h2>
-      <p>없습니다. MarkLeaf 는 이름, 이메일, 사용 기록, 문서 내용 등 어떤 정보도 개발자나 제3자에게 보내지 않습니다.</p>
+        <p>MarkLeaf 는 <strong>사용자의 문서 내용과 개인정보를 어디에도 전송하지 않습니다.</strong> 개발자는 서버를 운영하지 않으며, 분석·광고·추적 코드를 넣지 않습니다.</p>
 
-      <h2>2. 사용자 기기 안에만 저장하는 정보</h2>
-      <p>기능을 위해 아래 정보를 사용자의 브라우저 안에만 저장합니다. 이 정보는 개발자가 볼 수 없습니다.</p>
-      <table>
-        <tr><th>정보</th><th>저장 위치</th><th>용도</th></tr>
-        <tr><td>보기 설정(테마, 글자 크기 등)</td><td>크롬 저장소(크롬 동기화를 켰다면 사용자의 구글 계정으로 동기화)</td><td>모든 문서에 같은 설정 적용</td></tr>
-        <tr><td>커스텀 CSS</td><td>크롬 로컬 저장소</td><td>사용자가 입력한 스타일 적용</td></tr>
-        <tr><td>파일·폴더 접근 권한(핸들), 최근 문서 목록</td><td>브라우저 IndexedDB</td><td>사용자가 고른 파일에 다시 저장</td></tr>
-        <tr><td>저장하지 않은 초안, 버전 기록(문서별 최근 30개)</td><td>브라우저 IndexedDB</td><td>실수로 닫았을 때 복구, 예전 내용으로 되돌리기</td></tr>
-        <tr><td>문서별 읽던 위치</td><td>브라우저 로컬 저장소</td><td>다시 열면 읽던 곳으로 이동</td></tr>
-      </table>
-      <p>확장 프로그램을 삭제하거나 브라우저의 사이트 데이터를 지우면 함께 삭제됩니다.</p>
+        <h2>1. 수집하는 정보</h2>
+        <p>없습니다. MarkLeaf 는 이름, 이메일, 사용 기록, 문서 내용 등 어떤 정보도 개발자나 제3자에게 보내지 않습니다.</p>
 
-      <h2>3. 권한을 쓰는 이유</h2>
-      <p>로컬 파일(file://)과 GitHub Raw 주소의 .md 문서를 표시하고, 사용자가 허용한 사이트의 .md 원문만 문서로 바꾸기 위해 필요한 권한만 사용합니다. 파일에 저장하는 것은 사용자가 크롬의 파일·폴더 선택 창에서 직접 고른 파일과 폴더뿐입니다.</p>
+        <h2>2. 사용자 기기 안에만 저장하는 정보</h2>
+        <p>기능을 위해 아래 정보를 사용자의 브라우저 안에만 저장합니다. 이 정보는 개발자가 볼 수 없습니다.</p>
+        <table>
+          <tr><th>정보</th><th>저장 위치</th><th>용도</th></tr>
+          <tr><td>보기·편집 설정(테마, 색, 글자 크기, 표 모양, 화면 언어, 툴박스 배치·도구 순서, 오른쪽 클릭 메뉴·맞춤법 검사 켜기 등)</td><td>크롬 저장소(크롬 동기화를 켰다면 사용자의 구글 계정으로 동기화)</td><td>모든 문서에 같은 설정 적용</td></tr>
+          <tr><td>커스텀 CSS</td><td>크롬 로컬 저장소</td><td>사용자가 입력한 스타일 적용</td></tr>
+          <tr><td>최근에 고른 코드 언어(최근 5개)</td><td>크롬 로컬 저장소</td><td>코드 블록 언어 고르기에서 먼저 보여 주기</td></tr>
+          <tr><td>내 문서 템플릿(직접 저장한 경우)</td><td>크롬 로컬 저장소</td><td>새 문서를 만들 때 고르기</td></tr>
+          <tr><td>파일·폴더 접근 권한(핸들), 허용한 폴더 목록, 최근 문서 목록</td><td>브라우저 IndexedDB</td><td>사용자가 고른 파일과 폴더에 다시 저장</td></tr>
+          <tr><td>저장하지 않은 초안, 버전 기록(문서별 최근 30개)</td><td>브라우저 IndexedDB</td><td>실수로 닫았을 때 복구, 예전 내용으로 되돌리기</td></tr>
+          <tr><td>문서별 읽던 위치</td><td>브라우저 로컬 저장소</td><td>다시 열면 읽던 곳으로 이동</td></tr>
+          <tr><td>최근 오류 기록(최근 20개, 문서 내용·파일 경로·주소를 지운 오류 메시지만)</td><td>크롬 로컬 저장소</td><td>사용자가 [문제 신고]를 눌렀을 때 진단 정보에 넣기</td></tr>
+          <tr><td>저장 횟수, 처음 저장한 날짜, 별점 안내를 보여 줬는지 여부</td><td>크롬 로컬 저장소</td><td>꾸준히 쓴 뒤 웹 스토어 별점 안내를 한 번만 보여 주기</td></tr>
+        </table>
+        <p>확장 프로그램을 삭제하거나 브라우저의 사이트 데이터를 지우면 함께 삭제됩니다.</p>
 
-      <h2>4. 외부 리소스</h2>
-      <p>모든 글꼴과 라이브러리(Milkdown, KaTeX, Mermaid, highlight.js 등)는 확장 프로그램 안에 들어 있어 외부 서버에서 내려받지 않습니다. 문서 안의 이미지·링크처럼 문서 작성자가 넣은 외부 주소는 일반 웹페이지와 같이 브라우저가 불러옵니다.</p>
+        <h2>3. 문제 신고</h2>
+        <p>옵션이나 팝업의 [문제 신고]를 누르면 버전·브라우저·설정·최근 오류 기록을 <strong>클립보드에 복사만</strong> 합니다. MarkLeaf 가 자동으로 보내지 않으며, 사용자가 직접 붙여 넣어 보낼 때에만 그 내용이 전달됩니다. 문서 내용과 파일 경로는 들어 있지 않습니다.</p>
 
-      <h2>5. 변경과 문의</h2>
-      <p>이 방침이 바뀌면 이 페이지와 시행일을 갱신합니다. 문의는 크롬 웹 스토어의 MarkLeaf 페이지에 있는 개발자 연락처로 보내 주세요.</p>
+        <h2>4. 맞춤법 검사</h2>
+        <p>맞춤법 검사는 기본으로 꺼져 있습니다. 켜면 브라우저에 들어 있는 맞춤법 검사 기능을 그대로 씁니다. MarkLeaf 는 글을 보내지 않지만, 크롬 설정에서 ‘향상된 맞춤법 검사’를 켜 두었다면 크롬이 입력한 글을 구글의 맞춤법 서비스로 보낼 수 있습니다. 이 동작은 크롬 설정을 따릅니다.</p>
+
+        <h2>5. 권한을 쓰는 이유</h2>
+        <p>로컬 파일(file://)과 GitHub Raw 주소의 .md 문서를 표시하고, 사용자가 허용한 사이트의 .md 원문만 문서로 바꾸기 위해 필요한 권한만 사용합니다. 파일에 저장하는 것은 사용자가 크롬의 파일·폴더 선택 창에서 직접 고른 파일과 폴더뿐입니다.</p>
+
+        <h2>6. 외부 리소스</h2>
+        <p>모든 글꼴과 라이브러리(Milkdown, KaTeX, Mermaid, highlight.js 등)는 확장 프로그램 안에 들어 있어 외부 서버에서 내려받지 않습니다. 문서 안의 이미지·링크처럼 문서 작성자가 넣은 외부 주소는 일반 웹페이지와 같이 브라우저가 불러옵니다.</p>
+
+        <h2>7. 변경과 문의</h2>
+        <p>이 방침이 바뀌면 이 페이지와 시행일을 갱신합니다. 문의는 크롬 웹 스토어의 MarkLeaf 페이지에 있는 개발자 연락처나 지원 탭으로 보내 주세요.</p>
+      </section>
+
+      <section id="en" lang="en">
+        <h1>MarkLeaf Privacy Policy</h1>
+        <p class="meta">Effective October 20, 2026 (first published October 15, 2026) · Applies to the MarkLeaf Chrome extension</p>
+
+        <p>MarkLeaf <strong>never sends your documents or personal information anywhere.</strong> The developer runs no servers and includes no analytics, advertising or tracking code.</p>
+
+        <h2>1. Information we collect</h2>
+        <p>None. MarkLeaf does not send your name, email, usage history, document text or any other information to the developer or to third parties.</p>
+
+        <h2>2. Information stored only on your device</h2>
+        <p>To make its features work, MarkLeaf stores the following only inside your browser. The developer cannot see it.</p>
+        <table>
+          <tr><th>Information</th><th>Where</th><th>Why</th></tr>
+          <tr><td>View and editing settings (theme, colors, text size, table style, interface language, toolbox layout and tool order, right-click menu and spell check switches, etc.)</td><td>Chrome storage (synced to your Google account if Chrome sync is on)</td><td>Apply the same settings to every document</td></tr>
+          <tr><td>Custom CSS</td><td>Chrome local storage</td><td>Apply the styles you entered</td></tr>
+          <tr><td>Recently chosen code languages (last 5)</td><td>Chrome local storage</td><td>Show them first in the code language picker</td></tr>
+          <tr><td>Your document templates (if you save any)</td><td>Chrome local storage</td><td>Pick them when creating a new document</td></tr>
+          <tr><td>File and folder access handles, allowed folders, recent documents</td><td>Browser IndexedDB</td><td>Save back to the files and folders you chose</td></tr>
+          <tr><td>Unsaved drafts, version history (last 30 per document)</td><td>Browser IndexedDB</td><td>Recover after closing by mistake, restore earlier text</td></tr>
+          <tr><td>Reading position per document</td><td>Browser local storage</td><td>Return to where you left off</td></tr>
+          <tr><td>Recent error log (last 20 error messages, with document text, file paths and addresses removed)</td><td>Chrome local storage</td><td>Included in the diagnostics when you press [Report a problem]</td></tr>
+          <tr><td>Number of saves, date of the first save, whether the rating prompt was shown</td><td>Chrome local storage</td><td>Show the Chrome Web Store rating prompt once, after regular use</td></tr>
+        </table>
+        <p>All of it is deleted when you remove the extension or clear the browser's site data.</p>
+
+        <h2>3. Reporting a problem</h2>
+        <p>[Report a problem] in the options page or popup only <strong>copies</strong> the version, browser, settings and recent error log to your clipboard. MarkLeaf never sends it; it reaches anyone only if you paste and send it yourself. It contains no document text or file paths.</p>
+
+        <h2>4. Spell check</h2>
+        <p>Spell check is off by default. When you turn it on, MarkLeaf uses your browser's built-in spell checker. MarkLeaf does not send your text, but if “Enhanced spell check” is on in Chrome's settings, Chrome may send what you type to Google's spelling service. That behavior follows your Chrome settings.</p>
+
+        <h2>5. Why we need permissions</h2>
+        <p>MarkLeaf uses only the permissions needed to show local (file://) and GitHub Raw .md files as documents, and to turn .md source pages into documents only on sites you allow. It saves only to files and folders you pick yourself in Chrome's file and folder pickers.</p>
+
+        <h2>6. External resources</h2>
+        <p>All fonts and libraries (Milkdown, KaTeX, Mermaid, highlight.js and others) are bundled in the extension and are never downloaded from external servers. External addresses that a document's author put in the document, such as images and links, are loaded by the browser like on any web page.</p>
+
+        <h2>7. Changes and contact</h2>
+        <p>If this policy changes, this page and its effective date will be updated. For questions, use the developer contact or the support tab on MarkLeaf's Chrome Web Store page.</p>
+      </section>
     </main>
   </body>
 </html>
